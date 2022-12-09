@@ -4,13 +4,10 @@ import commonjs from "@rollup/plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import babel from "@rollup/plugin-babel";
 
-const isDev = process.env.NODE_ENV !== "production";
-
-console.log("ddd:", process.env.NODE_ENV);
-
 export default [
   {
     input: "./src/index.ts",
+    external: ["@reduxjs/toolkit"],
     output: [
       {
         file: "dist/index.esm.js",
@@ -32,7 +29,7 @@ export default [
         transformMixedEsModules: true,
       }),
       typescript(),
-      terser(),
+      // terser(),
     ].filter(Boolean),
   },
 ];

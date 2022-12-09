@@ -1,9 +1,9 @@
 {
   "name": "rtk-loading",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A middleware that collects the loading state generated during the execution of asynchronous reducer under the react toolkit",
   "type": "module",
-  "main": "dist/index.cjs",
+  "main": "dist/index.esm",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -w -c",
