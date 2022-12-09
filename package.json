@@ -1,0 +1,60 @@
+{
+  "name": "rtk-loading",
+  "version": "1.0.5",
+  "description": "A middleware that collects the loading state generated during the execution of asynchronous reducer under the react toolkit",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "rollup -w -c",
+    "build": "NODE_ENV=production rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/laii7/rtk-loading"
+  },
+  "keywords": [
+    "rtk",
+    "loading",
+    "async",
+    "middleware",
+    "rtk-loading",
+    "rtk-loading",
+    "effects"
+  ],
+  "author": "etsvain",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^23.0.4",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "core-js": "^3.26.1",
+    "eslint": "^8.29.0",
+    "rollup": "^3.7.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "redux": "^4.2.0"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "*.d.ts",
+    "README.md"
+  ],
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-redux": {
+      "optional": true
+    }
+  },
+  "sideEffects": false
+}

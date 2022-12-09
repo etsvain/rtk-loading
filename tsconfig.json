@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "lib":["DOM","ES2015"],
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "outDir": "./dist", // 指定输出目录
+    "declaration": true,
+    "paths": {
+      "@/*": ["./src/*"],
+
+    }
+  },
+  "include": [
+    "src/",
+    "types/"
+  ]
+}
