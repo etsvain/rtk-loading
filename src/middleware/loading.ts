@@ -1,9 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-interface ILoadingState {
-  effects: { [key: string]: boolean };
-  global: boolean;
-}
+import {ILoadingState} from '../types'
 
 const initialState: ILoadingState = {
   global: false,
